@@ -2,7 +2,7 @@
 
 This section of the project implements a **32-bit hardware divider** using RTL (Register Transfer Level) modeling and is designed in **Logisim-Evolution**. The divider performs integer division and outputs both the quotient and the remainder.
 
-### 🧾 Problem Description
+### Problem Description
 
 Design a sequential circuit that divides a 32-bit dividend by a 32-bit divisor. The operation is triggered by a `start` signal and should complete in a finite number of clock cycles, after which a `done` signal is raised to indicate completion.
 
@@ -10,7 +10,7 @@ The system should be built using **Logisim-Evolution** and optionally described 
 
 ---
 
-### ⚙️ Inputs and Outputs
+### Inputs and Outputs
 
 | Signal     | Width    | Description                         |
 |------------|----------|-------------------------------------|
@@ -24,7 +24,7 @@ The system should be built using **Logisim-Evolution** and optionally described 
 
 ---
 
-### 🏗️ Implementation Requirements
+### Implementation Requirements
 
 - The divider must perform the operation **after `start` is set**, and assert the `done` signal once the result is available.
 - A **flowchart or FSM** is used to guide RTL development.
@@ -33,11 +33,11 @@ The system should be built using **Logisim-Evolution** and optionally described 
 
 ---
 
-### 🧪 Testing & Evaluation
+### Testing & Evaluation
 
 The implementation is tested using a provided Verilog testbench and synthesis script.
 
 Run the following in your terminal:
 
 ```bash
-./synth_valid.sh schematic.circ HW2/tb2.v
+./synth_valid.sh schematic.circ tb.v
